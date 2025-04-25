@@ -1,0 +1,14 @@
+# This file contains configuration options for the Dart analyzer.
+analyzer:
+  errors:
+    unused_import: warning
+    dead_code: error
+    missing_return: error
+    unnecessary_this: warning
+  linter:
+    rules:
+      - prefer_single_quotes
+      - always_declare_return_types
+      - avoid_print
+      - public_member_api_docs
+      - lines_longer_than_80_chars
