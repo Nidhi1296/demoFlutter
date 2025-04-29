@@ -10,14 +10,47 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.7
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
 
 flutter:
   uses-material-design: true
 
   assets:
     - assets/images/
-    - assets/icons/
+  
+  fonts:
+    - family: Gilory
+      fonts:
+        - asset: assets/fonts/gilory_regular.ttf
+        - asset: assets/fonts/gilory_bold.ttf
+          weight: 700
+        - asset: assets/fonts/gilory_light.ttf
+          weight: 300
+        - asset: assets/fonts/gilory_medium.ttf
+          weight: 500
+        - asset: assets/fonts/gilory_semibold.ttf
+          weight: 600
+    - family: SFProText
+      fonts:
+        - asset: assets/fonts/sfprotext_regular.ttf
+        - asset: assets/fonts/sfprotext_bold.ttf
+          weight: 700
+        - asset: assets/fonts/sfprotext_light.ttf
+          weight: 300
+        - asset: assets/fonts/sfprotext_medium.ttf
+          weight: 500
+        - asset: assets/fonts/sfprotext_semibold.ttf
+          weight: 600
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter_regular.ttf
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo_without_bg.png"
